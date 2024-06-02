@@ -36,7 +36,7 @@ I've set up two network shares:
 
 **Tips**
 
-By default, the RG35XXSP is set to sleep within 1 minute of inactivity. SSH and Samba also stops working (I presume Wi-Fi is turned off while it's asleep). You can adjust this timer in Settings > Lock screen.
+By default, the RG35XXSP is set to sleep within 1 minute of inactivity. SSH and Samba also stops working -- presumably from its Wi-Fi turning during sleep -- but will automatically resume once out of sleep. You can adjust this timer in Settings > Lock screen.
 
 **Disclaimer**
 
