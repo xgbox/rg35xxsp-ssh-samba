@@ -1,4 +1,4 @@
-# SSH and Samba for Anbernic RG35XXSP
+# SSH and Samba for Anbernic RG35XXSP Stock OS
 
 **Why would you want this?**
 
