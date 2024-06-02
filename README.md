@@ -19,7 +19,9 @@ The RG35XXSP stock OS has the packages needed for SSH. But to my knowledge, Anbe
 
 Samba unfortunately does not seem to be packaged with the stock OS, so _samba_enable.sh_ will do an apt-get command to pull the necessary packages off the Internet in order to install it. Depending on your Internet speeds, that may take a few minutes. The script also initiates Samba services without having to reboot, and configures itself to automatically turn on after a reboot. Once the script finishes, you should be able to start accessing it through Windows by opening your start menu and typing in \\<Your RG35XXSP's IP>\ during which point you should be prompted for credentials, which are once again root and root. 
 
-I've set up two network shares: __sdcard which has the same hierarchy as when you access your MicroSD card's partition, and __root which is the top level (/) directory.
+I've set up two network shares: 
+1. __sdcard - the same location as when you access your MicroSD card's partition
+2. __root - the top level (/) directory.
 
 **Installation**
 
