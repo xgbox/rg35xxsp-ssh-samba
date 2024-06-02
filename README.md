@@ -35,6 +35,7 @@ I've set up two network shares:
 8. Access your RG35XXSP by SFTP with WinSCP, SSH with a terminal, or with Samba by connecting to it as a network drive. Use credentials root and root if prompted.
 
 **Tips**
+
 By default, the RG35XXSP is set to sleep within 1 minute of inactivity. SSH and Samba also stops working (I presume Wi-Fi is turned off while it's asleep). You can adjust this timer in Settings > Lock screen.
 
 **Disclaimer**
