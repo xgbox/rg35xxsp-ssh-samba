@@ -20,7 +20,7 @@ The RG35XXSP stock OS has the packages needed for SSH. But to my knowledge, Anbe
 Samba unfortunately does not seem to be packaged with the stock OS, so _samba_enable.sh_ will do an apt-get command to pull the necessary packages off the Internet in order to install it. Depending on your Internet speeds, that may take a few minutes. The script also initiates Samba services without having to reboot, and configures itself to automatically turn on after a reboot. Once the script finishes, you should be able to start accessing it through Windows by opening your start menu and typing in \\<Your RG35XXSP's IP>\ during which point you should be prompted for credentials, which are once again root and root. 
 
 I've set up two network shares: 
-1. ___sdcard_ - the same location as when you access your MicroSD card's partition
+1. ___sdcard_ - the same location as when you access your MicroSD card's partition.
 2. ___root_ - the top level (/) directory.
 
 **Installation**
@@ -33,6 +33,9 @@ I've set up two network shares:
 6. Select APPS.
 7. Run _ssh_enable.sh_ and/or _samba_enable.sh_ in either order.
 8. Access your RG35XXSP by SFTP with WinSCP, SSH with a terminal, or with Samba by connecting to it as a network drive. Use credentials root and root if prompted.
+
+**Tips**
+By default, the RG35XXSP is set to sleep within 1 minute of inactivity. SSH and Samba also stops working (I presume Wi-Fi is turned off while it's asleep). You can adjust this timer in Settings > Lock screen.
 
 **Disclaimer**
 
