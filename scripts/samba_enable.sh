@@ -72,4 +72,3 @@ user=root
 pass=root
 
 (echo "$pass"; echo "$pass") | smbpasswd -s -a "$user"
->>>>>>> parent of fbcdcfc (Revert "rev2")
