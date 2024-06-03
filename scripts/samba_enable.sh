@@ -16,7 +16,6 @@ if [ ! -f /lib/systemd/system/smbd.service ]; then
 
 
 fi
->>>>>>> parent of fbcdcfc (Revert "rev2")
 
 systemctl enable smbd
 systemctl start smbd
