@@ -17,7 +17,7 @@ if [ ! -f /lib/systemd/system/smbd.service ]; then
 
 fi
 
-systemctl enable smbd
+systemctl enable smbd 
 systemctl start smbd
 systemctl enable nmbd
 systemctl start nmbd
@@ -52,8 +52,19 @@ cat > /etc/samba/smb.conf << EOF
     force user = nobody
 
     [__sdcard]
-    comment = SD card: top level
+    comment = SD slot 1: top level
     path = /mnt/mmc
+    browsable = yes
+    writable = yes
+    guest ok = no
+    read only = no
+    create mode = 0755
+    directory mode = 0755
+    force user = nobody
+
+    [__sdcard2]
+    comment = SD slot 2: top level
+    path = /mnt/sdcard
     browsable = yes
     writable = yes
     guest ok = no
