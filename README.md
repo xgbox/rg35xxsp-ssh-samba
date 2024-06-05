@@ -19,9 +19,10 @@ The RG35XXSP stock OS has the packages needed to enable SSH. But to my knowledge
 
 Samba unfortunately does not seem to be packaged with the stock OS, so _samba_enable.sh_ will attempt to pull the necessary packages from the Internet in order to install it. Depending on your Internet speeds, that may take a few minutes. Once the script finishes, you should be able to start accessing it through Windows by opening your start menu and typing in \\\\<Your RG35XXSP's IP>\\ during which point you should be prompted for credentials, which are once again root and root. Note that Samba will stay enabled throughout reboots and shutdowns.
 
-samba_enable.sh also sets up two network shares: 
-1. ___sdcard_ - the same location as when you access your MicroSD card's partition.
-2. ___root_ - the top level (/) directory.
+samba_enable.sh also sets up three network shares: 
+1. ___sdcard_ - the partition for the MicroSD card in slot 1 (same hierarchy as accessing it from a card reader)
+2. ___sdcard2_ - the partition for the MicroSD card in slot 2.
+3. ___root_ - the top level (/) directory.
 
 **Installation**
 
