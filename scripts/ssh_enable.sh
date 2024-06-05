@@ -13,6 +13,9 @@ touch ${G_CONF}
 sed -i '/global.ssh=/d' "${G_CONF}"
 echo "global.ssh=1" >> "${G_CONF}"
 
+# Sets root password
+sh -c 'echo root:root | chpasswd'        
+
 #Start SSH service
 systemctl enable ssh.service
 systemctl start ssh.service
